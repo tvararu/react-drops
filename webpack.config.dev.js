@@ -5,7 +5,7 @@ const config = {
   devtool: 'cheap-module-eval-source-map',
   entry: [
     'webpack-hot-middleware/client',
-    './components/index'
+    './components/App'
   ],
   output: {
     path: path.join(__dirname, 'dist'),

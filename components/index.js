@@ -1,6 +1,11 @@
-// @flow
-import React from 'react'
-import { render } from 'react-dom'
-import { Hello } from './Hello/Hello'
-
-render(<Hello />, document.getElementById('root'))
+export const html = `<!doctype html>
+<html>
+  <head>
+    <title>react-drops</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script src="/static/bundle.js"></script>
+  </body>
+</html>
+`

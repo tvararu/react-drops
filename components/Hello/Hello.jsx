@@ -1,6 +1,4 @@
 // @flow
 import React from 'react'
 
-export default function Hello () {
-  return <div>Hello, world!</div>
-}
+export const Hello = () => <div>Hello, world!</div>
