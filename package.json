@@ -4,6 +4,7 @@
   "description": "WIP repository in which I plan to implement a few widgets from Codrops using React, to practice.",
   "main": "index.js",
   "scripts": {
+    "dev": "babel-node server.js",
     "lint": "standard",
     "test": "npm run lint"
   },
@@ -26,6 +27,7 @@
     "react-dom": "^0.14.6"
   },
   "devDependencies": {
+    "babel-cli": "^6.4.5",
     "babel-core": "^6.4.5",
     "babel-eslint": "^5.0.0-beta6",
     "babel-loader": "^6.2.1",
