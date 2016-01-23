@@ -4,7 +4,7 @@
   "description": "WIP repository in which I plan to implement a few widgets from Codrops using React, to practice.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "standard"
   },
   "repository": {
     "type": "git",
@@ -16,5 +16,12 @@
   "bugs": {
     "url": "https://github.com/tvararu/react-drops/issues"
   },
-  "homepage": "https://github.com/tvararu/react-drops#readme"
+  "homepage": "https://github.com/tvararu/react-drops#readme",
+  "dependencies": {
+    "react": "^0.14.6"
+  },
+  "devDependencies": {
+    "standard": "^5.4.1",
+    "webpack": "^1.12.12"
+  }
 }
