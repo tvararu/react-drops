@@ -1,6 +1,6 @@
 import React from 'react'
 import { render } from 'react-dom'
-import { Hello } from './Hello/Hello'
+import { Hello } from './Hello'
 
 export class App extends React.Component {
   render () {
