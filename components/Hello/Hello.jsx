@@ -1,2 +1,6 @@
 // @flow
-export default function meaning (): number { return 42 }
+import React from 'react'
+
+export default function Hello () {
+  return <div>Hello, world!</div>
+}

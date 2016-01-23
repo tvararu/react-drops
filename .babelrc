@@ -1,4 +1,9 @@
 {
+  "env": {
+    "development": {
+      "presets": ["react-hmre"]
+    }
+  },
   "plugins": ["transform-flow-strip-types"],
   "presets": ["react", "es2015"]
 }
