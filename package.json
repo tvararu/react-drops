@@ -4,7 +4,8 @@
   "description": "WIP repository in which I plan to implement a few widgets from Codrops using React, to practice.",
   "main": "index.js",
   "scripts": {
-    "test": "standard"
+    "lint": "standard && flow",
+    "test": "npm run lint"
   },
   "repository": {
     "type": "git",
@@ -17,10 +18,19 @@
     "url": "https://github.com/tvararu/react-drops/issues"
   },
   "homepage": "https://github.com/tvararu/react-drops#readme",
+  "standard": {
+    "parser": "babel-eslint"
+  },
   "dependencies": {
     "react": "^0.14.6"
   },
   "devDependencies": {
+    "babel": "^6.3.26",
+    "babel-eslint": "^5.0.0-beta6",
+    "babel-plugin-transform-flow-strip-types": "^6.4.0",
+    "babel-preset-es2015": "^6.3.13",
+    "babel-preset-react": "^6.3.13",
+    "flow-bin": "^0.20.1",
     "standard": "^5.4.1",
     "webpack": "^1.12.12"
   }

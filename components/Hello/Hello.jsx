@@ -1,1 +1,2 @@
-export default function meaning () { return 42 }
+// @flow
+export default function meaning (): number { return 42 }
