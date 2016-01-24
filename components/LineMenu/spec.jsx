@@ -1,7 +1,7 @@
 import R from 'ramda'
 import React from 'react'
 import test from 'tape'
-import { shallow } from 'enzyme'
+import { render } from 'enzyme'
 import { LineMenu } from './index'
 
 const menuItems = ['Home', 'Gallery', 'Portfolio', 'Clients', 'Contact']
@@ -15,7 +15,7 @@ const contains = R.curry((needles, haystack) =>
 )
 
 test('<LineMenu /> displays five menu items', assert => {
-  const wrapper = shallow(<LineMenu
+  const wrapper = render(<LineMenu
     items={ menuItems }
   />)
   assert.equal(contains(menuItems, wrapper.text()), true)
