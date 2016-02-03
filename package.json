@@ -2,7 +2,6 @@
   "name": "react-drops",
   "version": "0.0.1",
   "description": "WIP repository in which I plan to implement a few widgets from Codrops using React, to practice.",
-  "main": "index.js",
   "scripts": {
     "dev": "babel-node server.js",
     "lint": "standard",
