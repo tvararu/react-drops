@@ -1,6 +1,6 @@
 import React from 'react'
 
-export class LineMenuItem {
+export class LineMenuItem extends React.Component {
   static propTypes = {
     children: React.PropTypes.node
   };
@@ -12,7 +12,7 @@ export class LineMenuItem {
   }
 }
 
-export class LineMenu {
+export class LineMenu extends React.Component {
   static propTypes = {
     items: React.PropTypes.arrayOf(React.PropTypes.string).isRequired
   };
