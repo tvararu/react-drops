@@ -1,6 +1,6 @@
 import React from 'react'
 import { render } from 'react-dom'
-import { LineMenu } from './LineMenu'
+import LineMenu from './LineMenu'
 
 export class App extends React.Component {
   render () {

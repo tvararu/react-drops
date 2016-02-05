@@ -2,7 +2,7 @@ import R from 'ramda'
 import React from 'react'
 import test from 'tape'
 import { render } from 'enzyme'
-import { LineMenu } from './index'
+import LineMenu from './index'
 
 const menuItems = ['Home', 'Gallery', 'Portfolio', 'Clients', 'Contact']
 
