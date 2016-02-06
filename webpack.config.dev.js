@@ -1,7 +1,7 @@
-import path from 'path'
-import webpack from 'webpack'
+var path = require('path')
+var webpack = require('webpack')
 
-const config = {
+module.exports = {
   devtool: 'cheap-module-eval-source-map',
   entry: [
     'webpack-hot-middleware/client',
@@ -27,5 +27,3 @@ const config = {
     }]
   }
 }
-
-export default config
