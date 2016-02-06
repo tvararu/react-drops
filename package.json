@@ -3,11 +3,13 @@
   "version": "0.0.1",
   "description": "WIP repository in which I plan to implement a few widgets from Codrops using React, to practice.",
   "scripts": {
-    "build": "npm run clean && npm run build:webpack",
-    "build:webpack": "cross-env NODE_ENV=production webpack --config webpack.config.prod.js",
+    "build": "npm run clean && npm run build:server && npm run build:webpack",
+    "build:server": "webpack --config ./webpack.server.js",
+    "build:webpack": "cross-env NODE_ENV=production webpack --config ./webpack.prod.js",
     "clean": "rimraf dist",
-    "dev": "babel-node server.js",
+    "dev": "npm run clean && npm run build:server && npm run start",
     "lint": "standard",
+    "start": "node dist/server.js",
     "test": "npm run lint && npm run unit-test",
     "unit-test": "babel-tape-runner components/**/*.jsx | faucet"
   },
