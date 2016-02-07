@@ -4,7 +4,7 @@ const webpack = require('webpack')
 module.exports = {
   devtool: 'source-map',
   entry: [
-    './components/App'
+    './client'
   ],
   output: {
     path: path.join(__dirname, 'dist'),
@@ -30,8 +30,12 @@ module.exports = {
   module: {
     loaders: [{
       test: /\.jsx?/,
-      loaders: ['babel'],
-      exclude: /node_modules/
+      loader: 'babel',
+      exclude: /node_modules/,
+      include: __dirname,
+      query: {
+        presets: ['react', 'es2015', 'stage-0']
+      }
     }]
   }
 }

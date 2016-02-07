@@ -1,7 +1,7 @@
 const path = require('path')
 
 module.exports = {
-  entry: './server.js',
+  entry: './server',
   target: 'node',
   output: {
     path: path.join(__dirname, 'dist'),
@@ -15,7 +15,12 @@ module.exports = {
   module: {
     loaders: [{
       test: /\.jsx?/,
-      loaders: ['babel']
+      loader: 'babel',
+      exclude: /node_modules/,
+      include: __dirname,
+      query: {
+        presets: ['react', 'es2015', 'stage-0']
+      }
     }]
   }
 }
