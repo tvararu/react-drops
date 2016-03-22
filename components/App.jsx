@@ -5,7 +5,7 @@ export default class App extends React.Component {
   render () {
     const menuItems = ['Home', 'Gallery', 'Portfolio', 'Clients', 'Contact']
     return <div>
-      <LineMenu items={ menuItems } />
+      <LineMenu items={menuItems} />
     </div>
   }
 }

@@ -14,9 +14,9 @@ const contains = R.curry((needles, haystack) =>
   R.pipe(R.map(R.contains(R.__, haystack)), allAreTrue)(needles)
 )
 
-test('<LineMenu /> displays five menu items', assert => {
+test('<LineMenu /> displays five menu items', (assert) => {
   const wrapper = render(<LineMenu
-    items={ menuItems }
+    items={menuItems}
   />)
   assert.equal(contains(menuItems, wrapper.text()), true)
 

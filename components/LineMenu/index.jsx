@@ -9,7 +9,7 @@ class LineMenu extends React.Component {
 
   render () {
     return <div>
-      { this.props.items.map(item => <Item key={ item }>{ item }</Item>) }
+      {this.props.items.map((item) => <Item key={item}>{item}</Item>)}
     </div>
   }
 }
