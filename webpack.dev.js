@@ -14,7 +14,11 @@ module.exports = {
   },
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
-    new webpack.NoErrorsPlugin()
+    new webpack.NoErrorsPlugin(),
+    new webpack.DllReferencePlugin({
+      context: '.',
+      manifest: require('./dist/dll-manifest.json')
+    })
   ],
   resolve: {
     extensions: ['', '.js', '.jsx']
